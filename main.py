@@ -101,7 +101,7 @@ class App(ctk.CTk):
         main_label.place(relx=0.5,rely=0.5,anchor="center")
 
         button_images = ["./resources/images/button1.png","./resources/images/button2.png"]
-        button_titles = ["Systèmes linéaires", "Intégration Numerique"]
+        button_titles = ["Linear Systems", "Numerical Integration"]
 
         for i in range(len(button_images)):
             button = ctk.CTkButton(self.left_frame,command=lambda title=button_titles[i]: self.display_page(title),corner_radius=8,text=button_titles[i],compound="top",font=("Trebuchet MS Bold",16),hover_color="red",image=ctk.CTkImage(light_image=Image.open(button_images[i]),size=(180,100)))
@@ -113,10 +113,10 @@ class App(ctk.CTk):
         print(button_title)
         if button_title == "home":
             self.home_text_var.set(value="Welcome to Numerical Analysis !")
-        elif button_title == "Systèmes linéaires" :
-            self.home_text_var.set(value="Systèmes Linéaires (Ax=B)")
+        elif button_title == "Linear Systems" :
+            self.home_text_var.set(value="Linear Systems (Ax=B)")
 
-            dialog = Dialog("Helper Window","Entrer les dimensions de votre matrice",["N","M"],"transparent")
+            dialog = Dialog("Matrix Dimensions","Enter the dimensions of your matrix",["N","M"],"transparent")
             dim = dialog.get_input()
 
             try:
@@ -241,7 +241,7 @@ class App(ctk.CTk):
                 )
                 Warning_Label.pack(pady=10)
                     
-        elif button_title == "Intégration Numerique":
+        elif button_title == "Numerical Integration":
             self.home_text_var.set(value="Intégration Numerique (∫ f(x)dx)")
 
             dataFrame = ctk.CTkFrame(self.main_frame,fg_color="transparent")
