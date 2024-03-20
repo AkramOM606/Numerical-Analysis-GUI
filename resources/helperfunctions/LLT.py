@@ -1,14 +1,17 @@
 import numpy as np
 
+
 def definie_positive(A):
-    valeur_propre=np.linalg.eigvals(A)
-    return np.all(valeur_propre>0)
+    valeur_propre = np.linalg.eigvals(A)
+    return np.all(valeur_propre > 0)
+
 
 def symetrique(A):
-    At=np.transpose(A)
-    if np.array_equal(A,At):
+    At = np.transpose(A)
+    if np.array_equal(A, At):
         return True
     return False
+
 
 def matric_L_Lt(A):
     n = len(A)
@@ -32,17 +35,18 @@ def matric_L_Lt(A):
 
             l[j][i] = (A[j][i] - somme2) / l[i][i]
 
-    return l,np.transpose(l)
+    return l, np.transpose(l)
 
-def resolution_choleski(A,B):
+
+def resolution_choleski(A, B):
     if not definie_positive(A):
         return "E"
     if not symetrique(A):
         return "E"
-    n=len(A)
-    L,Lt=matric_L_Lt(A)
+    n = len(A)
+    L, Lt = matric_L_Lt(A)
     y = np.zeros(n)
     x = np.zeros(n)
     y = np.linalg.solve(L, B)
-    x = np.linalg.solve(Lt,y)
+    x = np.linalg.solve(Lt, y)
     return x

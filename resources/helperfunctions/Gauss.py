@@ -1,9 +1,10 @@
 import numpy as np
 
-def triangularisation(A,b):
-    n=len(A)
+
+def triangularisation(A, b):
+    n = len(A)
     for k in range(n):
-        pivot =A[k][k]
+        pivot = A[k][k]
 
         for i in range(k + 1, n):
 
@@ -14,20 +15,22 @@ def triangularisation(A,b):
 
                 A[i][j] = A[i][j] - (facteur * A[k][j])
 
-    return A,b
+    return A, b
+
 
 def verifier_triangularisation(A):
     for i in range(len(A)):
         for j in range(i):
-            if A[i][j]!=0:
+            if A[i][j] != 0:
                 return False
     return True
 
-def resoudre_equation_gauss(A,b):
-    n=len(b)
-    x=np.zeros(n)
-    if verifier_triangularisation(A)==False:
-        triangularisation(A,b)
+
+def resoudre_equation_gauss(A, b):
+    n = len(b)
+    x = np.zeros(n)
+    if verifier_triangularisation(A) is False:
+        triangularisation(A, b)
     x[n - 1] = b[n - 1] / A[n - 1][n - 1]
 
     for i in range(n - 2, -1, -1):

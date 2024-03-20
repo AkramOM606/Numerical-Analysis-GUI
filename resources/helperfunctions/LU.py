@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def matrice_U(A):
     n = len(A)
     P = np.identity(n)
@@ -15,15 +16,17 @@ def matrice_U(A):
     U = A
     return U, P
 
+
 def matrice_L(A):
     U, M = matrice_U(A)
 
     return np.linalg.inv(M)
 
+
 def resolution_LU(A, B):
-    U ,M= matrice_U(A)
+    U, M = matrice_U(A)
     L = matrice_L(A)
     y = np.linalg.solve(L, B)
-    x = np.linalg.solve(U,y)
+    x = np.linalg.solve(U, y)
 
     return x
