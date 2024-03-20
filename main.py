@@ -81,7 +81,7 @@ class App(ctk.CTk):
         self.home_text_var = ctk.StringVar()
 
         # Configuration
-        self.title("TP : Numerical Analysis")
+        self.title("Numerical Analysis")
 
         screen_width = self.winfo_screenwidth()
         screen_height = self.winfo_screenheight()
