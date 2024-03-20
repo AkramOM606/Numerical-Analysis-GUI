@@ -3,6 +3,7 @@
 This repository provides a user-friendly GUI application built with CustomTkinter for performing numerical analysis tasks, specifically solving linear systems and numerical integration.
 
 ![image](https://github.com/AkramOM606/Numerical-Analysis-GUI/assets/162604610/ed80c0f8-0a66-47b9-a9d6-d2337333fd93)
+
 ![image](https://github.com/AkramOM606/Numerical-Analysis-GUI/assets/162604610/a7670b46-2892-4546-be85-d43f52f8ab1e)
 
 ## Description
