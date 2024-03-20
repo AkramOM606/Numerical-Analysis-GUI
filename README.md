@@ -34,8 +34,8 @@ It offers functionalities for:
 ## Running the Application
 
 1. Clone this repository:
-```
-git clone [https://github.com/](https://github.com/)AkramOM606/Numerical-Analysis-GUI
+```bash
+https://github.com/AkramOM606/Numerical-Analysis-GUI
 ```
 2. Install the additional dependencies if not present:
 ```
