@@ -35,7 +35,7 @@ It offers functionalities for:
 
 1. Clone this repository:
 ```bash
-git clone [https://github.com/](https://github.com/)AkramOM606/Numerical-Analysis-GUI
+git clone https://github.com/AkramOM606/Numerical-Analysis-GUI
 ```
 2. Install the additional dependencies if not present:
 ```
