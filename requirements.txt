@@ -1,0 +1,4 @@
+customtkinter
+numpy
+numexpr
+pillow
