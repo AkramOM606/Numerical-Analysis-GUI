@@ -4,7 +4,7 @@ This repository provides a user-friendly GUI application built with CustomTkinte
 
 ![image](https://github.com/AkramOM606/Numerical-Analysis-GUI/assets/162604610/c36c0dac-33fb-4c4b-8704-b1989c636e83)
 
-![image](https://github.com/AkramOM606/Numerical-Analysis-GUI/assets/162604610/79fd7d4e-cde3-4eec-82e2-a26b1ddf91f1)
+![image](https://github.com/AkramOM606/Numerical-Analysis-GUI/assets/162604610/faf5b9b9-7814-4f8e-986e-224c2c49e4bb)
 
 ## Description
 
