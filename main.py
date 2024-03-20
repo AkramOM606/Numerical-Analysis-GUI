@@ -116,7 +116,7 @@ class App(ctk.CTk):
         elif button_title == "Linear Systems" :
             self.home_text_var.set(value="Linear Systems (Ax=B)")
 
-            dialog = Dialog("Matrix Dimensions","Enter the dimensions of your matrix",["N","M"],"transparent")
+            dialog = Dialog("Matrix dimensions","Enter the dimensions of your matrix",["N","M"],"transparent")
             dim = dialog.get_input()
 
             try:
@@ -168,7 +168,7 @@ class App(ctk.CTk):
                 typeFrame.pack(anchor="center",pady=10)
 
                 radio_var = ctk.IntVar()
-                methodList = ["Inverse de A","Pivot de GAUSS","Methode LU","Methode LLT"]
+                methodList = ["Inverse of A","Gaussian Elimination","LU Decomposition","Cholesky Decomposition"]
                 radiobuttons = []
                 for i in range(len(methodList)):
                     radiobuttons.append(ctk.CTkRadioButton(typeFrame,text=methodList[i],font=("Trebuchet MS Bold",20),variable=radio_var,value=i))
@@ -242,7 +242,7 @@ class App(ctk.CTk):
                 Warning_Label.pack(pady=10)
                     
         elif button_title == "Numerical Integration":
-            self.home_text_var.set(value="Intégration Numerique (∫ f(x)dx)")
+            self.home_text_var.set(value="Numerical Integration (∫ f(x)dx)")
 
             dataFrame = ctk.CTkFrame(self.main_frame,fg_color="transparent")
             dataFrame.pack(padx=5,pady=5)
@@ -266,7 +266,7 @@ class App(ctk.CTk):
             helperFrame.pack()
             
             radio_var = ctk.IntVar()
-            methodList = ["Methode de Trapezes","Methode de Simpson"]
+            methodList = ["Trapezoidal rule","Simpson's rule"]
             radiobuttons = []
             for i in range(len(methodList)):
                 radiobuttons.append(ctk.CTkRadioButton(helperFrame,text=methodList[i],font=("Trebuchet MS Bold",20),variable=radio_var,value=i))
@@ -284,7 +284,7 @@ class App(ctk.CTk):
                 for widgets in SFrame.winfo_children():
                         widgets.destroy()
                     
-                dialog = Dialog("Helper Window","Entrer la valeur de h ",["h"],"transparent")
+                dialog = Dialog("Length of subintervals","Enter the value of h ",["h"],"transparent")
 
                
                 h = float(dialog.get_input()[0])
