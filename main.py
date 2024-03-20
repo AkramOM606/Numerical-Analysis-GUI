@@ -438,6 +438,7 @@ class App(ctk.CTk):
 
                 if radiovar == 0:
                     if a < b:
+                        x = np.arange(a, b + h, h)
                         f = ne.evaluate(exp)
                         SoluLabel = ctk.CTkLabel(
                             SolutionFrame,
@@ -446,6 +447,7 @@ class App(ctk.CTk):
                         )
                         SoluLabel.pack()
                     elif a > b:
+                        x = np.arange(b, a + h, h)
                         f = ne.evaluate(exp)
                         SoluLabel = ctk.CTkLabel(
                             SolutionFrame,
