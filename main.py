@@ -422,7 +422,7 @@ class App(ctk.CTk):
 
                 dialog = Dialog(
                     "Length of subintervals",
-                    "Enter the value of h ",
+                    "Enter the value of h\nLength of subintervals",
                     ["h"],
                     "transparent",
                 )
