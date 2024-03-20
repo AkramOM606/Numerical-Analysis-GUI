@@ -1,12 +1,12 @@
 # Numerical-Analysis-GUI
 
-This repository provides a user-friendly GUI application built with custom Tkinter for performing numerical analysis tasks.
+This repository provides a user-friendly GUI application built with CustomTkinter for performing numerical analysis tasks, specifically solving linear systems and numerical integration.
 
 ## Description
 
 It offers functionalities for:
 
-* **Solving Linear Systems (Ax = B):**
+1* **Solving Linear Systems (Ax = B):**
     * **Inverse of A:** Computes the exact solution using the matrix inverse.
     * **Gaussian Elimination:** Solves the system using forward and backward substitution after LU decomposition.
     * **LU Decomposition:** Factors the coefficient matrix (A) into a lower triangular matrix (L) and an upper triangular matrix (U) for efficient solution.
@@ -23,14 +23,13 @@ It offers functionalities for:
 
 ## Installation
 
-**Prerequisites:**
+**Prerequisites and Dependencies:**
 
 * Python (assumed to be installed)
-* Tkinter (included with Python)
-
-**Additional Dependency:**
-
-* NumPy (for numerical computations): Install using `pip install numpy`
+* CustomTkinter
+* NumPy
+* NumExpr
+* Pillow    
 
 ## Running the Application
 
