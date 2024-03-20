@@ -35,20 +35,20 @@ It offers functionalities for:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/AkramOM606/Numerical-Analysis-GUI
+git clone [https://github.com/AkramOM606/Numerical-Analysis-GUI.git](https://github.com/AkramOM606/Numerical-Analysis-GUI.git)
 ```
 2. Install the additional dependencies if not present:
-```
+```bash
 pip install -r requirements.txt
 ```
 3. Launch the application using Python
-```
+```bash
 python main.py
 ```
 
 ## Usage
 
-Detailed instructions on using the application's interface will be provided within the application itself.
+The application features a user-friendly interface that allows you to directly interact with its functionalities. Simply launch the application and explore the available options within the GUI. The intuitive design guides you through matrix/vector input, method selection, and function/integration parameter specification.
 
 ## Contributing
 
