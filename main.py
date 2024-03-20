@@ -438,20 +438,18 @@ class App(ctk.CTk):
 
                 if radiovar == 0:
                     if a < b:
-                        x = np.arange(a, b + h, h)
                         f = ne.evaluate(exp)
                         SoluLabel = ctk.CTkLabel(
                             SolutionFrame,
-                            text=f"I = {trapezes(a,b,f,h)}",
+                            text=f"I = {trapezes(a, b, f, h)}",
                             font=("Trebuchet MS Bold", 24),
                         )
                         SoluLabel.pack()
                     elif a > b:
-                        x = np.arange(b, a + h, h)
                         f = ne.evaluate(exp)
                         SoluLabel = ctk.CTkLabel(
                             SolutionFrame,
-                            text=f"I = {-trapezes(b,a,f,h)}",
+                            text=f"I = {-trapezes(b, a, f, h)}",
                             font=("Trebuchet MS Bold", 24),
                         )
                         SoluLabel.pack()
@@ -468,7 +466,7 @@ class App(ctk.CTk):
                         f = ne.evaluate(exp)
                         SoluLabel = ctk.CTkLabel(
                             SolutionFrame,
-                            text=f"I = {simpson(a,b,f,h)}",
+                            text=f"I = {simpson(a, b, f, h)}",
                             font=("Trebuchet MS Bold", 24),
                         )
                         SoluLabel.pack()
@@ -477,7 +475,7 @@ class App(ctk.CTk):
                         f = ne.evaluate(exp)
                         SoluLabel = ctk.CTkLabel(
                             SolutionFrame,
-                            text=f"I = {-simpson(b,a,f,h)}",
+                            text=f"I = {-simpson(b, a, f, h)}",
                             font=("Trebuchet MS Bold", 24),
                         )
                         SoluLabel.pack()
