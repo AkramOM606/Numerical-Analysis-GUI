@@ -6,7 +6,7 @@ This repository provides a user-friendly GUI application built with CustomTkinte
 
 It offers functionalities for:
 
-1* **Solving Linear Systems (Ax = B):**
+* **Solving Linear Systems (Ax = B):**
     * **Inverse of A:** Computes the exact solution using the matrix inverse.
     * **Gaussian Elimination:** Solves the system using forward and backward substitution after LU decomposition.
     * **LU Decomposition:** Factors the coefficient matrix (A) into a lower triangular matrix (L) and an upper triangular matrix (U) for efficient solution.
@@ -29,13 +29,22 @@ It offers functionalities for:
 * CustomTkinter
 * NumPy
 * NumExpr
-* Pillow    
+* Pillow
 
 ## Running the Application
 
-1. Clone this repository.
-2. Install the additional dependency (NumPy) if needed.
-3. Launch the application using the appropriate script name (e.g., `python main.py`).
+1. Clone this repository:
+```
+git clone [https://github.com/](https://github.com/)AkramOM606/Numerical-Analysis-GUI
+```
+2. Install the additional dependencies if not present:
+```
+pip install -r requirements.txt
+```
+3. Launch the application using Python
+```
+python main.py
+```
 
 ## Usage
 
