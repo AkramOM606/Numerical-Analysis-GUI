@@ -1,5 +1,3 @@
-# Made By : ADRANE Akram & HARCHA Badr-Eddine
-
 def trapezes(a,b,f,h):
     if(b<a):
         c=a

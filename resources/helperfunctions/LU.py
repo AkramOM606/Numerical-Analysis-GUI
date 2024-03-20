@@ -1,5 +1,3 @@
-# Made By : ADRANE Akram & HARCHA Badr-Eddine
-
 import numpy as np
 
 def matrice_U(A):

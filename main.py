@@ -217,10 +217,11 @@ class App(ctk.CTk):
 
                     XEntries = []
 
-                    if X!="E":
-                        for i in range(int(dim[0])):
-                            XEntries.append(ctk.CTkLabel(SubSoluFrame,text=X[i].round(3),font=("Trebuchet MS Bold",24)))
-                            XEntries[i].grid(row=i,column=0,padx=5,pady=5)
+                    if isinstance(X, np.ndarray):
+                        if np.any(X != "E"):
+                            for i in range(int(dim[0])):
+                                XEntries.append(ctk.CTkLabel(SubSoluFrame,text=X[i].round(3),font=("Trebuchet MS Bold",24)))
+                                XEntries[i].grid(row=i,column=0,padx=5,pady=5)
                     else :
                         Caution_Label = ctk.CTkLabel(
                             SubSoluFrame,
