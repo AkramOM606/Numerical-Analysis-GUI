@@ -1,3 +1,4 @@
+import os
 import numexpr as ne
 import numpy as np
 from PIL import Image
@@ -80,6 +81,10 @@ class App(ctk.CTk):
         super().__init__()
         self.home_text_var = ctk.StringVar()
 
+        self.main_dir = os.path.dirname(os.path.realpath(__file__))
+        self.folder_path = os.path.join(self.main_dir, "resources")
+        X = os.path.join(self.folder_path, "images\\exit.png")
+
         # Configuration
         self.title("Numerical Analysis")
 
@@ -115,7 +120,10 @@ class App(ctk.CTk):
             hover_color="red",
             command=lambda title="home": self.display_page(title),
             image=ctk.CTkImage(
-                light_image=Image.open("./resources/images/home.png"), size=(40, 40)
+                light_image=Image.open(
+                    os.path.join(self.folder_path, "images\\home.png")
+                ),
+                size=(40, 40),
             ),
         )
         self.home_button.pack(side="right", anchor="ne", padx=5, pady=5)
@@ -130,7 +138,10 @@ class App(ctk.CTk):
             hover_color="#FF0",
             command=self.quit,
             image=ctk.CTkImage(
-                light_image=Image.open("./resources/images/exit.png"), size=(40, 40)
+                light_image=Image.open(
+                    os.path.join(self.folder_path, "images\\exit.png")
+                ),
+                size=(40, 40),
             ),
         )
         button_exit.pack(side="right", anchor="ne", pady=5)
@@ -145,8 +156,8 @@ class App(ctk.CTk):
         main_label.place(relx=0.5, rely=0.5, anchor="center")
 
         button_images = [
-            "./resources/images/button1.png",
-            "./resources/images/button2.png",
+            os.path.join(self.folder_path, "images\\button1.png"),
+            os.path.join(self.folder_path, "images\\button2.png"),
         ]
         button_titles = ["Linear Systems", "Numerical Integration"]
 
@@ -361,7 +372,9 @@ class App(ctk.CTk):
                 font=("Trebuchet MS Bold", 32),
                 compound="right",
                 image=ctk.CTkImage(
-                    light_image=Image.open("./resources/images/integral.png"),
+                    light_image=Image.open(
+                        os.path.join(self.folder_path, "images\\integral.png")
+                    ),
                     size=(60, 160),
                 ),
             )
