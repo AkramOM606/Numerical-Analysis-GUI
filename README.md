@@ -60,7 +60,7 @@ We welcome contributions to enhance this project! Here's how you can participate
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them clearly.
+3. Make your changes and commit them.
 4. Open a pull request to propose your changes.
 
 We'll review your pull request and provide feedback promptly.
